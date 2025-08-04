@@ -22,7 +22,7 @@ def consultarCliente(documento):
     refFilasEnum = enumerate(refFilas)
 
     for idx, refFila in refFilasEnum:
-        if refFila[0].value == documento:
+        if str(refFila[0].value) == documento:
             valores = []
             valores.append(idx)
 
